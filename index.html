@@ -16,7 +16,12 @@
                 <h4 class="mb-3"><b>Cek Karakter Online <i class="bi bi-emoji-laughing"></i></b> </h4>
             <div class="input-group flex-nowrap mb-3">
                 <input v-model="nama" type="text" class="form-control" placeholder="Nama Kamu" aria-label="Username" aria-describedby="addon-wrapping">
-            </div>
+            </di<div class="input-group mb-3">
+                <select class="form-select" v-model="tanggalValue">
+                    <option disabled selected>-- Tanggal Lahir mu --</option>
+                    <option v-for="tg in tanggal" :value="tg">{{ tg }}</option>
+                </select>v>
+		
             <template v-if="bulans === 1">
                 <div class="input-group mb-3">
                     <select class="form-select" v-model="bulanValue">
