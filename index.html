@@ -19,25 +19,23 @@
             </div>
             <div class="input-group mb-3">
                 <select class="form-select" v-model="tanggalValue">
-                    <option disabled selected>-- Tanggal Lahir mu --</option>
+                    <option disabled selected>Tanggal Lahirmu</option>
                     <option v-for="tg in tanggal" :value="tg">{{ tg }}</option>
                 </select>
             </div>
 		
-            <template v-if="bulans === 1">
                 <div class="input-group mb-3">
                     <select class="form-select" v-model="bulanValue">
-                        <option disabled selected>-- Bulan Lahir mu --</option>
+                        <option disabled selected>Bulan Lahirmu</option>
                         <option v-for="bln in bulan" :value="bln">{{ bln }}</option>
                     </select>
                 </div>
-            </template>
 
-            <button type="submit" @click="sub"  class="btn btn-primary">Pencet</button>
-            <button type="submit" @click="reload"  class="btn btn-danger">Ulang</button>
+            <button type="submit" @click="sub"  class="btn btn-primary">CEK</button>
+            <button type="submit" @click="reload"  class="btn btn-danger">ULANGI</button>
             <div class="text-center mt-3">
                 <template v-if="nama.length > 0">
-                    <h4> {{waktu}}, {{ nama }} </h4>
+                    <h4>Hai {{ nama }} , {{waktu}} </h4>
                 </template> 
                 <template v-else></template> 
             </div>
