@@ -20,7 +20,7 @@ new Vue({
             
             if(blan == 'Januari'){
                 return this.watak = `
-                  ·Tenang dan berwibawa 
+                  <p>·Tenang dan berwibawa </p>
                   ·Suka berterus terang dan tidak suka basa-basi (to the point)
                   ·pandai menyimpan rahasia dan bisa dipercaya (ini yang bagus)
                   ·Disukai banyak orang karena selalu kelihatan ceria (yang penting nda ketawa-ketawa sendiri)
