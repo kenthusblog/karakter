@@ -196,7 +196,7 @@ new Vue({
                 return this.sifat = `Jangan mengharapkan sifat romantis dari manusia yang lahir pada tanggal ` + tggl + `. Dia tergolong dalam orang yang kurang serius, bersikap bodoh dalam menghadapi sesuatu. Namun begitu dia selalu bersikap penuh pengertian bila menghadapi sesuatu masalah. Dia sangat benci pada perkara-perkara yang berbau keributan terutama yang menimbulkan huru-hara. Dalam hal percintaan dia menuntut untuk lebih diberi perhatian tapi dia jarang mengambil berat pada manusianya. Namun begitu sikapnya disenangi oleh kawan-kawan` 
                     break;
                 case 22: case 25:
-                return this.sifat = `Wataknya paling susah untuk dimengertikan.Kadangkala dia disukai karena kebaikannya dan kadangkala dia dibenci karena perbuatannya. Namun buat teman-teman dia merupakan orang penuh pengertian.
+                return this.sifat = `Orang yang lahir pada tanggal ` + tggl + ` Wataknya paling susah untuk dimengertikan. Kadangkala dia disukai karena kebaikannya dan kadangkala dia dibenci karena perbuatannya. Namun buat teman-teman dia merupakan orang penuh pengertian.
                 Dalam pelbagai situasi dia lebih suka merendahkan diri jarang sekali mahu menonjolkan kelebihannya pada orang lain.Manusia jenis ini terkenal sebagai perayu dan sebab itulah dia diberi julukan seniman asmara.` 
                     break;
                 default:
@@ -214,16 +214,16 @@ new Vue({
            var date = new Date()
             switch (date.getHours()) {
                 case 5: case 6: case 7: case 8: case 9: case 10:
-                    return this.waktus = 'Slamat Pagi...awali harimu dengan senyuman'
+                    return this.waktus = 'Selamat Pagi...awali harimu dengan senyuman'
                     break;
                 case 10: case 11: case 12: case 13: case 14:
-                    return this.waktus = 'Slamat Siang'
+                    return this.waktus = 'Selamat Siang'
                     break;
                 case 15: case 16: case 17: case 18:
-                    return this.waktus = 'Slamat Sore'
+                    return this.waktus = 'Selamat Sore'
                     break;
                 case 19: case 20: case 21: case 22: case 23: case 24:
-                    return this.waktus = 'Slamat Malam...jaga kesehatan , jangan begadang !'
+                    return this.waktus = 'Selamat Malam...jaga kesehatan, jangan begadang !'
                     break;
                 default:
                     return this.waktus = 'ini sudah jam berapa ? jaga kesehatan lah ! jangan begadang'
