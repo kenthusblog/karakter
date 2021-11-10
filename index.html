@@ -13,9 +13,9 @@
     <div id="apps">
         
         <div class="container shadow p-3 mt-5 mb-5 bg-body rounded">
-                <h4 class="mb-3"><b>Cek Karakter Online <i class="bi bi-emoji-laughing"></i></b> </h4>
+                <h4 class="mb-3"><b>Cek Karakter Online </b><i class="bi bi-emoji-laughing"></i></h4>
             <div class="input-group flex-nowrap mb-3">
-                <input v-model="nama" type="text" class="form-control" placeholder="kasih masuk ko nama mu" aria-label="Username" aria-describedby="addon-wrapping">
+                <input v-model="nama" type="text" class="form-control" placeholder="Nama Kamu" aria-label="Username" aria-describedby="addon-wrapping">
             </div>
             <div class="input-group mb-3">
                 <select class="form-select" v-model="tanggalValue">
@@ -24,13 +24,15 @@
                 </select>
             </div>
 		
+	<template v-if="bulans === 1">
                 <div class="input-group mb-3">
                     <select class="form-select" v-model="bulanValue">
                         <option disabled selected>Bulan Lahirmu</option>
                         <option v-for="bln in bulan" :value="bln">{{ bln }}</option>
                     </select>
                 </div>
-
+		</template>
+		
             <button type="submit" @click="sub"  class="btn btn-primary">CEK</button>
             <button type="submit" @click="reload"  class="btn btn-danger">ULANGI</button>
             <div class="text-center mt-3">
@@ -41,12 +43,12 @@
             </div>
             <template v-if="sifat.length > 0 && watak.length > 0">
                 <div class="mt-4">
-                    <h4>ini mi sifatmu, baca mi </h4>
+                    <h4>Sifat Berdasarkan Tanggal Lahirmu</h4>
                     <p>" {{ sifat }} "</p>
                 </div>
                 <hr>
                 <div class="mt-4">
-                    <h4>ini mi watakmu, liat sendiri mi </h4>
+                    <h4>Sifat Berdasarkan Bulan Lahirmu</h4>
                     <p>" {{ watak }} "</p>
                 </div>
             </template>
