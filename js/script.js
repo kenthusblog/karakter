@@ -162,7 +162,7 @@ new Vue({
 
             switch (tggl) {
                 case 1: case 9: case 24:
-                return this.sifat = `Pada umumnya manusia ini bersifat pendiam & konservatif. Namun dengan orang-orang tertentu dia cepat mesra. 
+                return this.sifat = `Pada umumnya manusia ini bersifat pendiam & konservatif. Namun dengan orang-orang tertentu dia cepat mesra. ` + br + `
                 Tapi manusia yang lahir tanggal `+ tggl +` mudah tersinggung. Karena sifatnya itu menyebabkan banyak orang yang tidak menyukainya. Namun begitu dia tetap dikagumi karena bersikap serius terutama yang berhubungan dengan orang ramai. Dalam hal percintaan, dia sanggup berbuat apa saja semata-mata untuk memenuhi segala keinginan manusianya. Tapi hati-hati kadangkala dia lebih mementingkan persahabatan daripada percintaan dan lebih rela memutuskan cintanya demi sebuah persahabatan yang telah terjalin lama.` 
                     break;
                 case 2: case 11: case 30:
