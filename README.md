@@ -1,1 +1,1 @@
-# karakter
+# karakter dibuat karena gabut
